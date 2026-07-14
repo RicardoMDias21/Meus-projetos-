@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O Código do Skate - Livros</title>
+
+<style>
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0a0f1c, #0d1b2a);
+    color: #e6edf3;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* TÍTULO */
+h1 { 
+    color: #4da6ff; 
+    text-align: center; 
+    font-size: 2.5rem;
+}
+
+/* SINOPSE */
+.sinopse {
+    max-width: 700px;
+    margin: 20px auto 40px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(77, 166, 255, 0.08);
+    border-radius: 12px;
+    color: #ddd;
+    line-height: 1.6;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(77, 166, 255, 0.2);
+}
+
+.sinopse h2{
+    color:#58a6ff;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+}
+
+/* PERSONAGENS */
+.image-box {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img {
+    max-width: 500px;
+    max-height: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.image-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 50px rgba(255, 165, 0, 0.8);
+}
+
+.subtitle {
+    color: #aaa;
+    margin-top: 10px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* CARD */
+.livro-card {
+    background: linear-gradient(145deg, #161b22, #1c2330);
+    border: 1px solid #2a3441;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.livro-card:hover { 
+    transform: translateY(-8px) scale(1.01);
+    border-color: #4da6ff; 
+    box-shadow: 0 0 20px rgba(77,166,255,0.2);
+}
+
+/* CAPA */
+.livro-capa {
+    width: 150px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+}
+
+/* INFO */
+.livro-info { flex: 1; min-width: 250px; }
+
+.livro-info h3 { 
+    margin-top: 0; 
+    color: #ffffff; 
+}
+
+/* DESCRIÇÃO */
+.livro-descricao { 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    color: #9fb3c8; 
+}
+
+/* PREÇO */
+.livro-preco {
+    font-size: 1.4rem;
+    color: #3fb950;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* BOTÃO */
+.btn-livro {
+    display: inline-block;
+    background: linear-gradient(135deg, #1f6feb, #4da6ff);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-livro:hover { 
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(77,166,255,0.6);
+}
+
+/* FRASE */
+.frase {
+    margin-top:40px;
+    font-size:20px;
+    font-style:italic;
+    text-align:center;
+    color:#8ab4ff;
+}
+
+/* FOOTER */
+.footer { 
+    text-align: center; 
+    margin-top: 40px; 
+    color: #8b949e; 
+    font-size: 0.8rem; 
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🛹 O Código do Skate</h1>
+
+<div class="sinopse">
+    <h2>Sinopse da Duologia</h2>
+
+    <p>
+        <strong>O Código do Skate</strong> Roma é um jovem de 21 anos que divide sua rotina entre o trabalho pesado em uma oficina mecânica e os estudos de Administração na faculdade. À noite, ele desafia o perigo em corridas clandestinas de skate para garantir uma renda extra, até que o encontro com mentores como Yuri e a Professora Beth, além da parceria com a talentosa Sofia, o motiva a trocar as ruas pelo profissionalismo das pistas oficiais.
+    </p>
+
+    <p>
+        Essa transição marca o início de uma trajetória de superação, onde Roma precisa amadurecer para enfrentar rivais implacáveis e perdas profundas.
+    </p>
+
+    <p>
+        A duologia encerra com uma mensagem inspiradora de que o sucesso não é definido por troféus, mas pela coragem de se levantar após cada queda. Roma transforma suas cicatrizes em aprendizado, tornando-se um mentor para a nova geração e provando que o equilíbrio real é encontrado na jornada, e não apenas no pódio.
+    </p>
+
+    <p>
+        É uma história vibrante sobre amizade, luto e a busca constante pelo próprio destino.
+    </p>
+</div>
+
+<h1>Personagens da Duologia</h1>
+
+<div class="image-box">
+    <img src="img1.jpg" alt="Personagens">
+</div>
+
+<div class="subtitle">
+    Histórias diferentes. Caminhos que se cruzam.
+</div>
+
+<p>Garanta já os seus exemplares e domine as pistas!</p>
+
+<!-- LIVRO 1 -->
+<div class="livro-card">
+<img src="capa1.jpg" class="livro-capa">
+
+<div class="livro-info">
+<h3>Livro 1</h3>
+
+<p class="livro-descricao">
+A jornada inicial de Roma, Sofia e Yuri.
+</p>
+
+<p class="livro-preco">R$ 6,00</p>
+
+<a href="https://pay.kiwify.com.br/yxmVUJk" class="btn-livro" target="_blank">
+🛒 Comprar
+</a>
+</div>
+</div>
+
+<!-- LIVRO 2 -->
+<div class="livro-card">
+<img src="capa2.jpg" class="livro-capa">
+
+<div class="livro-info">
+<h3>Livro 2</h3>
+
+<p class="livro-descricao">
+A continuação épica com novos desafios e rivalidades.
+</p>
+
+<p class="livro-preco">R$ 8,50</p>
+
+<a href="https://pay.kiwify.com.br/0UjpEhk" class="btn-livro" target="_blank">
+🛒 Comprar
+</a>
+</div>
+  <div style="max-width:700px; margin:20px auto; padding:15px; border:2px solid #ff9800; border-radius:10px; background:#fff8e1; color:#333; font-family:Arial, sans-serif; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
+    <h3 style="margin-top:0; color:#e65100;">📚 Direitos Autorais</h3>
+
+    <p style="margin:0; line-height:1.6;">
+        Este e-book é de <strong>uso pessoal</strong>. É proibido compartilhar,
+        copiar, reproduzir ou distribuir este PDF, total ou parcialmente,
+        sem autorização do autor. Todos os direitos reservados.
+    </p>
+</div>
+</div>
+<div class="frase">
+"Na vida, como no skate, a gente cai muitas vezes.
+Mas o verdadeiro código é sempre levantar."
+</div>
+
+<div class="footer">
+<p>&copy; 2026 O Código do Skate</p>
+</div>
+
+</div>
+
+</body>
+</html>
